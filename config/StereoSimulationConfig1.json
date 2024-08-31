@@ -1,0 +1,58 @@
+{
+    "depth_front": {
+        "intrinsic": [268.06, 268.06, 320, 240],
+        "depth_image_size": [640, 480],
+        "max_depth": 6,
+        "min_depth": 0.01,
+        "feature_num_per_grid": 30,
+        "grid_size": [5, 4],
+        "sharp_step": 1,
+        "plane_step": 2,
+        "search_range": 5
+    },
+
+    "Sensors": {
+        "imu": {
+            "Rib": [0, -1, 0,
+                    0, 0, -1,
+                    1, 0, 0],
+            "tib": [0, 0, 0],
+            "Na": [0.0001, 0.0001, 0.0001],
+            "ba": [0.0, 0.0, 0.0],
+            "Nba": [0.0001, 0.0001, 0.0001],
+            "Ng": [0.00001, 0.0001, 0.0001],
+            "bg": [0.0, 0.0, 0.0],
+            "Nbg": [0.0001, 0.0001, 0.0001]
+        },
+        "cam_num": 2,
+        "cam0": {
+            "intrinsic": [268.06, 268.06, 320, 240],
+            "image_size": [640, 480],
+            "max_depth": 6,
+            "min_depth": 0.1,
+            "Rcb": [1, 0, 0,
+                    0, 1, 0,
+                    0, 0, 1],
+            "tcb": [0.0, 0.0765, 0.18]
+        },
+        "cam1": {
+            "intrinsic": [268.06, 268.06, 320, 240],
+            "image_size": [640, 480],
+            "max_depth": 6,
+            "min_depth": 0.1,
+            "Rcb": [-1, 0, 0,
+                     0, 1, 0,
+                     0, 0, -1],
+            "tcb": [0.0, 0.0765, -0.18]
+        }
+    },
+
+    "KLOdometry": {
+        "map_voxel_size": 0.6,
+        "current_voxel_size": 0.1
+    },
+
+    "VoxelMap": {
+        "subvoxel_size": 0.2
+    }
+}
