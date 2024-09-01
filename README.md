@@ -33,9 +33,3 @@ make -j8
 cd examples
 ./tum_run
 ```
-
-## Yeguoqiang Dataset
-```
-cd examples
-./DM_run
-```
