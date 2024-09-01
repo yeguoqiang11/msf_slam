@@ -5,7 +5,7 @@ play it
 msf slam is a project of integrating multi-sensors to generate localization and 3D map, it may use tof, imu, image and maybe laser as well. we start develop by using tof, then extend it to multi-sensor.
 we hope it is a fusion library supportting a lot of sensors.
 
-the project also try a new way of odometry by directory estimating pose from depth image
+the project also try a new way of odometry by directory estimating pose from depth image. it also include wheel intrinsic and extrinsic calibration. we use wheel preintegration to optimize pose graph.
 
 # 2. Prerequisites
 we use at least C++14 and test it on ubuntu 18.04
