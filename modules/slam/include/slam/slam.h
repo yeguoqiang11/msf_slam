@@ -1,5 +1,5 @@
 // slam interface.
-// Copyright 2021 Dreame Co.Ltd. All rights reserved.
+// Copyright 2021 Yeguoqiang Co.Ltd. All rights reserved.
 
 #ifndef MODULES_SLAM_INCLUDE_SLAM_SLAM_H_
 #define MODULES_SLAM_INCLUDE_SLAM_SLAM_H_

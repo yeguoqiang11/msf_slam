@@ -20,19 +20,19 @@
 
 #include "msg_bridge.h"
 
-namespace dm        = dreame::dm;
-namespace transport = dreame::gemini::transport;
-using dreame::gemini::component::Component;
-using dreame::libra_msgs::HealthStatusMsgT;
-using dreame::libra_msgs::ImageT;
-using dreame::libra_msgs::ImuMsgT;
-using dreame::libra_msgs::OdometryMsgT;
-using dreame::libra_msgs::RobotModeMsgT;
-using dreame::libra_msgs::SlamCmdMsgT;
-using dreame::libra_msgs::SlamCmdSrv;
-using dreame::libra_msgs::SlamMapSrv;
-using dreame::libra_msgs::SlamPclSrv;
-using dreame::libra_msgs::SlamPoseMsgT;
+namespace dm        = Yeguoqiang::dm;
+namespace transport = Yeguoqiang::gemini::transport;
+using Yeguoqiang::gemini::component::Component;
+using Yeguoqiang::libra_msgs::HealthStatusMsgT;
+using Yeguoqiang::libra_msgs::ImageT;
+using Yeguoqiang::libra_msgs::ImuMsgT;
+using Yeguoqiang::libra_msgs::OdometryMsgT;
+using Yeguoqiang::libra_msgs::RobotModeMsgT;
+using Yeguoqiang::libra_msgs::SlamCmdMsgT;
+using Yeguoqiang::libra_msgs::SlamCmdSrv;
+using Yeguoqiang::libra_msgs::SlamMapSrv;
+using Yeguoqiang::libra_msgs::SlamPclSrv;
+using Yeguoqiang::libra_msgs::SlamPoseMsgT;
 
 namespace app {
 

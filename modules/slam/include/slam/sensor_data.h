@@ -1,5 +1,5 @@
 // sensor data interface.
-// Copyright 2021 Dreame Co.Ltd. All rights reserved.
+// Copyright 2021 Yeguoqiang Co.Ltd. All rights reserved.
 #ifndef MODULES_SLAM_INCLUDE_SLAM_SENSOR_DATA_H_
 #define MODULES_SLAM_INCLUDE_SLAM_SENSOR_DATA_H_
 

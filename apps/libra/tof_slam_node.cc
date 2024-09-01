@@ -4,16 +4,16 @@
 #include "gemini/transport/libra_log.h"
 
 CLASS_LOADER_REGISTER_CLASS(app::ToFSLAMNode,
-                            dreame::gemini::component::ComponentBase);
+                            Yeguoqiang::gemini::component::ComponentBase);
 
-using dreame::libra_msgs::DepthImageTopic;
-using dreame::libra_msgs::OdometryMsgTopic;
-using dreame::libra_msgs::ImuMsgTopic;
-using dreame::libra_msgs::SlamCmdTopic;
-using dreame::libra_msgs::RobotModeMsgTopic;
-using dreame::libra_msgs::HealthStatusMsgTopic;
-using dreame::libra_msgs::SlamSrvMapRequestTopic;
-using dreame::libra_msgs::SlamPoseMsgTopic;
+using Yeguoqiang::libra_msgs::DepthImageTopic;
+using Yeguoqiang::libra_msgs::OdometryMsgTopic;
+using Yeguoqiang::libra_msgs::ImuMsgTopic;
+using Yeguoqiang::libra_msgs::SlamCmdTopic;
+using Yeguoqiang::libra_msgs::RobotModeMsgTopic;
+using Yeguoqiang::libra_msgs::HealthStatusMsgTopic;
+using Yeguoqiang::libra_msgs::SlamSrvMapRequestTopic;
+using Yeguoqiang::libra_msgs::SlamPoseMsgTopic;
 
 namespace app {
 
@@ -23,21 +23,21 @@ bool ToFSLAMNode::RegisterTransport() {
   auto& nh = *transport::DomainParticipant::Instance();
 
   depth_sub_ = nh.CreateSubscriber<ImageT>(
-      dreame::libra_msgs::DepthImageTopic, 25, std::bind(&ToFSLAMNode::OnDepthImage, this, std::placeholders::_1));
+      Yeguoqiang::libra_msgs::DepthImageTopic, 25, std::bind(&ToFSLAMNode::OnDepthImage, this, std::placeholders::_1));
 
   odometry_sub_ = nh.CreateSubscriber<OdometryMsgT>(
-      dreame::libra_msgs::OdometryMsgTopic, 250,
+      Yeguoqiang::libra_msgs::OdometryMsgTopic, 250,
       std::bind(&ToFSLAMNode::OnOdometry, this, std::placeholders::_1));
 
   imu_sub_ = nh.CreateSubscriber<ImuMsgT>(
-      dreame::libra_msgs::ImuMsgTopic, 500, std::bind(&ToFSLAMNode::OnImu, this, std::placeholders::_1));
+      Yeguoqiang::libra_msgs::ImuMsgTopic, 500, std::bind(&ToFSLAMNode::OnImu, this, std::placeholders::_1));
 
   cmd_sub_ = nh.CreateSubscriber<SlamCmdMsgT>(
-      dreame::libra_msgs::SlamCmdTopic, 10,
+      Yeguoqiang::libra_msgs::SlamCmdTopic, 10,
       std::bind(&ToFSLAMNode::OnCmd, this, std::placeholders::_1));
 
   robot_mode_sub_ = nh.CreateSubscriber<RobotModeMsgT>(
-      dreame::libra_msgs::RobotModeMsgTopic, 10,
+      Yeguoqiang::libra_msgs::RobotModeMsgTopic, 10,
       std::bind(&ToFSLAMNode::OnRobotMode, this, std::placeholders::_1));
 
   health_status_sub_ = nh.CreateSubscriber<HealthStatusMsgT>(
@@ -59,7 +59,7 @@ bool ToFSLAMNode::RegisterTransport() {
 void ToFSLAMNode::InternalRun() {
   //空运转线程
   INFO("ToFSLAMNode start internal running %d %d %d...", 3, 2, 1);
-  while (dreame::gemini::OK()) {
+  while (Yeguoqiang::gemini::OK()) {
     sleep(1);
   }
 }
@@ -71,12 +71,12 @@ void ToFSLAMNode::OnRobotMode(const std::shared_ptr<RobotModeMsgT>& robot_mode_m
   auto robot_mode = robot_mode_msg->mode;
 
   //判断机器人是否在充电中
-  if (robot_mode == dreame::libra_msgs::RobotMode_ChargingMode) {
+  if (robot_mode == Yeguoqiang::libra_msgs::RobotMode_ChargingMode) {
   }
 
   //判断机器人是否暂停
-  if (robot_mode == dreame::libra_msgs::RobotMode_PauseAndStopMode || robot_mode == dreame::libra_msgs::RobotMode_StandbyMode ||
-      robot_mode == dreame::libra_msgs::RobotMode_ErrRepotMode) {
+  if (robot_mode == Yeguoqiang::libra_msgs::RobotMode_PauseAndStopMode || robot_mode == Yeguoqiang::libra_msgs::RobotMode_StandbyMode ||
+      robot_mode == Yeguoqiang::libra_msgs::RobotMode_ErrRepotMode) {
     //slam_system_node_->CtrlPause();
   }
 }

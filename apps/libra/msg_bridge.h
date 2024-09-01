@@ -1,5 +1,5 @@
 // bridge between libra_comm and internal msg
-// Copyright 2021 Dreame Co.Ltd. All rights reserved.
+// Copyright 2021 Yeguoqiang Co.Ltd. All rights reserved.
 
 #ifndef APPS_LIBRA_MSG_BRIDGE_H_
 #define APPS_LIBRA_MSG_BRIDGE_H_
@@ -7,7 +7,7 @@
 #include <vector>
 #include "modules/libra_comm/slam_cmd_msg_generated.h"
 
-using dreame::libra_msgs::SlamCmd_MAX;
+using Yeguoqiang::libra_msgs::SlamCmd_MAX;
 
 namespace app {
 

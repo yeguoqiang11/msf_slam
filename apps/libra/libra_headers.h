@@ -42,13 +42,13 @@
 #include "gemini/component/component.h"
 #include "gemini/transport/domain_participant.h"
 /////////////////////////////////////////////////////////////////////
-namespace dmsg     = dreame::libra_msgs;
-namespace ddm      = dreame::dm;
-namespace dmsg_std = dreame::std_msgs;
-namespace dtrans   = dreame::gemini::transport;
-namespace dcompo   = dreame::gemini::component;
-namespace dslam    = dreame::libra_node_slam;
-namespace dfile    = dreame::gemini::file;
+namespace dmsg     = Yeguoqiang::libra_msgs;
+namespace ddm      = Yeguoqiang::dm;
+namespace dmsg_std = Yeguoqiang::std_msgs;
+namespace dtrans   = Yeguoqiang::gemini::transport;
+namespace dcompo   = Yeguoqiang::gemini::component;
+namespace dslam    = Yeguoqiang::libra_node_slam;
+namespace dfile    = Yeguoqiang::gemini::file;
 /////////////////////////////////////////////////////////////////////
 #define PUBLISH_LOCAL_POINTS 1
 /////////////////////////////////////////////////////////////////////

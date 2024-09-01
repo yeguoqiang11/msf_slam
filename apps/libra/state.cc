@@ -1,5 +1,5 @@
 // state implementation
-// Copyright 2021 Dreame Co.Ltd. All rights reserved.
+// Copyright 2021 Yeguoqiang Co.Ltd. All rights reserved.
 
 #include <memory>
 #include <numeric>
@@ -8,7 +8,7 @@
 #include "modules/libra_comm/slam_cmd_msg_generated.h"
 #include "state.h"
 
-namespace msgs = dreame::libra_msgs;
+namespace msgs = Yeguoqiang::libra_msgs;
 
 // TODO(Tandy): implementation
 namespace app {

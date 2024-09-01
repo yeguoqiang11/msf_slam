@@ -15,7 +15,7 @@
 // 2. 第二部分信息可以按需加载，例如在有先验的重定位时，可以只加载先验范围内的点云数据，减少计算量；
 // 3. 可以实现大规模地图；
 //
-// Copyright 2021 Dreame Co.Ltd. All rights reserved.
+// Copyright 2021 Yeguoqiang Co.Ltd. All rights reserved.
 
 #ifndef MODULES_SLAM_INCLUDE_SLAM_MAP_DATA_H_
 #define MODULES_SLAM_INCLUDE_SLAM_MAP_DATA_H_

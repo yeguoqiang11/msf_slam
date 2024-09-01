@@ -1,11 +1,11 @@
 /**
  * @file DMmath.h
- * @author Guoqiang Ye (yegq@dreame.tech)
+ * @author Guoqiang Ye (yegq@Yeguoqiang.tech)
  * @brief 
  * @version 0.1
  * @date 2021-08-01
  * 
- * @copyright Copyright (c) 2022 Dreame Technology Co.Ltd. All rights reserved
+ * @copyright Copyright (c) 2022 Yeguoqiang Technology Co.Ltd. All rights reserved
  * 
  */
 #ifndef SRC_DMATH_H
